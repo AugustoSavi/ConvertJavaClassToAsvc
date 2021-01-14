@@ -52,7 +52,8 @@ function tratamentoType(nameTipoVariavel){
             name: "NomeEvent",
             namespace:"com.betha.saude.avro.CAMINHOEVENTO",
             fields: []
-            }
+            },
+            "java-class": "java.util.List"
         }
 
         default:
@@ -70,6 +71,7 @@ function constroiObjeto(name,tipo){
         return { 
             name,
             type: tratamentoType(tipo)
+            
         }
     }
 
