@@ -70,6 +70,7 @@ function constroiObjeto(name,tipo){
     if(tipo.includes("List")){
         return { 
             name,
+            default: null,
             type: tratamentoType(tipo)
             
         }
@@ -78,6 +79,6 @@ function constroiObjeto(name,tipo){
     return{
         name,
         default: null,
-        type: [null, tratamentoType(tipo) ]
+        type: ["null", tratamentoType(tipo) ]
     }
 }
